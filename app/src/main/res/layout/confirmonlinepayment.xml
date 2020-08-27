@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp">
+
+<!--        <android.support.v4.view.ViewPager
+            android:id="@+id/card_slides"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>-->
+
+        <ViewFlipper
+            android:id="@+id/v_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:layout_marginTop="199dp">
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Card(s)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/card_list_view"
+            android:layout_width="fill_parent"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="80dp"
+            android:divider="@color/colorPrimary"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/colorPrimary"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:layout_marginTop="299dp">
+
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="R 350,99"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/confirm_transaction"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_rounded"
+            android:text="Confirm" />
+
+        <Button
+            android:id="@+id/add_card"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/textfield_rounded"
+            android:textColor="@color/colorPrimary"
+            android:text="Add Card" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

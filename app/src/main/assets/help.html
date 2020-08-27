@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Help | picknscan.inc</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https:use.fontawesome.com/d1341f9b7a.js"></script>
+    <script src="js/fontawesome.js"></script>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div class="help-container container-fluid">
+        <!--Question Section -->
+        <div class="question-section jumbotron" style="background: teal;color: #fff;">
+            <div><h2 class="text-center">Have A Question ??</h2></div>
+            <div><p class="text-center">If you have any questions you can ask below and submit your for our review</p></div>
+            <div>
+                <form>
+                    <div class="form-group mr-5 ml-5">
+                        <textarea type="text" class="form-control" id="ask-question" placeholder="write question here.." style="height: 150px;"></textarea>
+                        <button type="submit" class="btn btn-primary btn-md btn-block mt-2" id="mypoupModal" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Submit Question</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </div>
+
+        <!--popup modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color:#000">Question Posted</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for posting your questions we will make sure you are replied soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!--End of popup modal-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+        <!--Modal Links-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+        <script>
+            $('#mypoupModal').on( "click", function() {
+                $('#exampleModal').modal({show:true});
+                $('#exampleModal').show();
+            });
+
+            $(document).ready(function(){
+                $("#mypoupModal").click(function(){
+                    $("#exampleModal").modal('show');
+                });
+            });
+        </script>
+        <!---->
+</body>
+</html> 

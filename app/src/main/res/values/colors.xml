@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008080</color>
+    <color name="colorPrimaryDark">#168e88</color>
+    <color name="backgroundColor">#efefef</color>
+    <color name="lightGray">#ededed</color>
+    <color name="deepPurple">#7c4dff</color>
+    <color name="green">#00bfa5</color>
+    <color name="pinkAccent">#ff4081 </color>
+    <color name="cedBackColor">#141423</color>
+    <color name="colorAccent">#fff</color>
+    <color name="trueColor">#17232b</color>
+    <color name="secondtrueColor">#168e88</color>
+</resources>

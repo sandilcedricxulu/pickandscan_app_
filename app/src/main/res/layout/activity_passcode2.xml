@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PIN">
+
+    <com.hanks.passcodeview.PasscodeView
+        android:id="@+id/passcodeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:firstInputTip="Enter your PIN "
+        app:correctStateColor="#71bb4d"
+        app:wrongStateColor="#ea2b46"
+        app:normalStateColor="#ffffff"
+        app:passcodeLength="5"
+        android:background="?attr/colorPrimary"
+        app:passcodeViewType="set_passcode"/>
+
+</FrameLayout>

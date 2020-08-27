@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PicknPay"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/invoice_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invoice #1002"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="32dp"/>
+
+    <TextView
+        android:id="@+id/invoice_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2019-06-24"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="32dp"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/invoice_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="09:20"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="32dp"
+        android:gravity="right"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="32dp"/>
+
+    <TextView
+        android:id="@+id/invoice_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4 items"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="32dp"
+        android:gravity="right"/>
+
+    <ListView
+        android:id="@+id/purchasedProducts"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="190dp"/>
+
+    <TextView
+        android:id="@+id/invoice_subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtotal   R420.88"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="32dp"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/invoice_vat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VAT   R72.94"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_marginTop="375dp"
+        android:layout_marginRight="32dp"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/invoice_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOTAL   R524.94"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="32dp"
+        android:gravity="right"/>
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

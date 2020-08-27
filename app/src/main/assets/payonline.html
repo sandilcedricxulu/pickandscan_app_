@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+         function getTotalPayAmount()
+         {
+           document.getElementById("amount").value = Android.getPayAmount();
+           getName();
+         }
+         function getName()
+         {
+          document.getElementById("name_first").value = Android.getFName();
+          getSurname();
+         }
+         function getSurname()
+         {
+          document.getElementById("name_last").value = Android.getSurname();
+          getEmail();
+         }
+         function getEmail()
+         {
+          document.getElementById("email_address").value = Android.getEmailAddress();
+          getPhoneNumber();
+         }
+         function getPhoneNumber()
+         {
+          document.getElementById("cell_number").value = Android.getCellNumber();
+         }
+    </script>
+    <title>Pay|</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https:use.fontawesome.com/d1341f9b7a.js"></script>
+    <script src="js/fontawesome.js"></script>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div class="container-fluid">
+        <div class="text-center mt-5">
+                <i class="fas fa-lock fa-5x" style="text-align: center; color: teal;"></i>
+            <div>
+                <p>You'll be redirected to a secure online payment services</p>
+            </div>
+        </div>
+            <form  action="https://www.payfast.co.za/eng/process" method="POST">
+                <div class="form-group"><input type="hidden" name="merchant_id" value="14090050" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" name="merchant_key" value="xuzvlxt8g80zs" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" name="return_url" value="http://mkhululi.net/web/pay-success.html" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" name="cancel_url" value="http://mkhululi.net/web/pay-cancel.html" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" name="notify_url" value="http://mkhululi.net/web/notify.html" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" id="name_first" name="name_first" value="" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" id="name_last" name="name_last" value="" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" id="email_address" name="email_address" value="" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" id="cell_number" name="cell_number" value="" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" id="amount" name="amount" value="" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" name="item_name" value="purchased_items" class="form-control form-control-lg"></div>
+                <div class="form-group"><input type="hidden" name="signature" value="" class="form-control form-control-lg"></div>
+                <button type="submit"name="button" class="btn btn-info btn-lg col-sm-12 mt-5" style="background-color: #008080" onclick="getTotalPayAmount()">Pay Online</button>
+              </form>
+        </div>
+    </div>
+    <script type = "text/javaScript" src="js/jquery-3.3.1.min.js"></script>
+    <script type = "text/javaScript" src="js/bootstrap.js"></script>
+    <script type = "text/javaScript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

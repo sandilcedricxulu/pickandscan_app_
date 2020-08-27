@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter barcode manually"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            />
+
+
+        <EditText
+            android:id="@+id/manual_barcode_value"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/textfield_rounded"
+            android:drawableLeft="@drawable/manualbarcode"
+            android:hint="   Type the barcode"
+            android:inputType="number"
+            android:paddingLeft="13dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ShopFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="446dp">
+
+        <TextView
+            android:id="@+id/theText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="Scanned Item(s)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/manual_barcode_imageView1"
+            android:layout_width="91dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/barcodemanual" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"
+            android:text="scan manual"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/enter_manual_barcode2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="65dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Enter Barcode Manually"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="17dp" 296/>-->
+
+
+        <ListView
+            android:id="@+id/scanneditemlist"
+            android:layout_width="match_parent"
+            android:layout_height="296dp"
+            android:layout_marginTop="155dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="449dp"
+        android:background="@color/backgroundColor">
+
+        <Button
+            android:id="@+id/toScan"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/textfield_rounded"
+            android:text="Scan Item"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/toCheck"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_rounded"
+            android:text="Checkout"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="253dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:text="R 350,99"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="253dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginRight="106dp"
+            android:text="Total  R"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/subTotalItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="17dp"
+            android:text="Subtotals(8 items)"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

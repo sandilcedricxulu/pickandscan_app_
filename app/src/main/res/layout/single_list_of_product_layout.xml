@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent"
+    tools:context=".receipt_view_layout">
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Red Bull 500ml"
+        android:layout_marginTop="10dp"
+        android:textSize="13dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="x3"
+        android:layout_marginTop="10dp"
+        android:textSize="13dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R 88,92"
+        android:layout_marginTop="10dp"
+        android:textSize="13dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>
